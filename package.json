@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@alrra/travis-scripts": "^1.1.0",
+    "browser-sync": "^1.9.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-filter": "^1.0.2",
+    "gulp-htmlmin": "^0.2.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-swig": "^0.7.4",
+    "run-sequence": "^1.0.2"
+  },
+  "private": true,
+  "scripts": {
+    "start": "npm run serve",
+    "build": "gulp build",
+    "serve": "gulp serve",
+    "test": "gulp build"
+  }
+}

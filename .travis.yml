@@ -1,0 +1,25 @@
+# For more information about the configurations used
+# in this file, please see the Travis CI documentation:
+# http://docs.travis-ci.com
+
+after_success:
+  - $(npm bin)/update-branch --commands "npm install && npm run build"
+                             --commit-message "Hey GitHub, this content is for you! [skip ci]"
+                             --directory "build"
+                             --distribution-branch "gh-pages"
+                             --source-branch "master"
+
+before_install:
+  - gem install sass compass
+
+env:
+  global:
+    - secure: "aFvIDrSx6T91kHM7JHJvwdU90eVZ/XIo3mztoDPHW2eysHomdwwE17ShEEQahOVTslOqjt88U7R8vcAoVliEie64oP/wK29To38Pe3N3YLvGeTfxYKuDhbUmm5U+16qTmgFTjlVbQXCMMH4HSjcPujIzX3wbd/vuF1mkj/cY8Z0="
+
+git:
+  depth: 10
+
+language: node_js
+
+node_js:
+  - "4"

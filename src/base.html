@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <script>
+      (function () {
+        // Force HTTPS.
+        if ((!location.port || location.port === '80') && location.protocol !== 'https:') {
+          location.protocol = 'https:';
+        }
+
+        (function(i,r){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+        })(window,'ga');
+
+        // window.ga('create', '', 'auto');
+        window.ga('send', 'pageview');
+
+        // Open external links in new tabs.
+        document.addEventListener('DOMContentLoaded', function () {
+          var links = document.querySelectorAll('a[href^="//"], a[href^="http://"], a[href^="https://"]');
+          for (var i = 0, len = links.length; i < len; ++i) {
+            links[i].setAttribute('target', '_blank');
+          }
+        });
+      })();
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>
