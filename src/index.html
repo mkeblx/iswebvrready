@@ -5,7 +5,7 @@
 {% block body %}
   {% include 'masthead.html' %}
   {% for feature in features %}
-    {% set featureId = feature.name|striptags|lower|replace('\s+', '-', 'g') %}
+    {% set featureId = feature.name|striptags|lower|replace(' ', '-') %}
     <article class="feature" id="{{ featureId }}">
       <header>
         <a href="#{{ featureId }}" class="perma">
