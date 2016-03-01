@@ -5,10 +5,9 @@
 }
 
 html {
-  background: #102a48 radial-gradient(circle closest-corner at 50% 39px,#166ab9,#013668,#102a48) no-repeat;
-  font-family: sans-serif;
-  font-size: 15px;
-  line-height: 1.4;
+  background: #0072ff;
+  background: linear-gradient(#00c6ff, #0072ff);
+  font: 15px/1.4 Helvetica Neue, Helvetica, sans-serif;
   min-height: 100%;
   overflow-y: scroll;
 }
@@ -37,7 +36,7 @@ a:active {
 a.wordmark {
   color: #fff;
   display: block;
-  padding: 4rem 0 1.5rem;
+  padding: 1.5rem 0 1.5rem;
   text-shadow: 0 2px 1px #000;
 }
 
@@ -56,11 +55,12 @@ a.wordmark {
 
 .external-links a:link,
 .external-links a:visited {
-  color: #71B5FF;
+  color: #369;
 }
 
 .external-links a:hover,
 .external-links a:active {
+  color: #036;
   text-decoration: underline;
 }
 
@@ -267,15 +267,34 @@ a.wordmark {
 }
 
 .outro {
-  color: #fff;
-  font-family: "Press Start 2P", monospace;
+  color: rgba(255,255,255,0.75);
+  font: 0.8vw/30px "Press Start 2P", monospace;
+  font-size: calc(0.6rem + 0.8vw);
   margin: 2.2rem 0;
   text-align: center;
 }
 
+.mozvr-wordmark {
+  display: inline-block;
+  margin: -10px -10px -10px 0;
+  padding: 10px;
+  opacity: 0.75;
+  transition: .2s background ease-in-out, .2s opacity ease-in-out;
+  vertical-align: bottom;
+}
+
+.mozvr-wordmark img {
+  display: block;
+  height: 30px;
+}
+
+.mozvr-wordmark:hover {
+  background: rgba(0,0,0,.25);
+  opacity: 1;
+}
+
 @media (min-width: 500px) {
   html {
-    background: #102a48 radial-gradient(circle closest-corner at 50% 93px,#166ab9,#013668,#102a48) no-repeat;
     font-size: 17px;
   }
 
@@ -289,8 +308,8 @@ a.wordmark {
 }
 
 @media (min-width: 800px) {
-  html {
-    background: #102a48 radial-gradient(circle closest-corner at 50% 122px,#166ab9,#013668,#102a48) no-repeat;
+  a.wordmark {
+    padding-top: 4rem;
   }
 
   .external-links {
