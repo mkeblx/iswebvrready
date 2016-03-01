@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <link rel="canonical" href="https://iswebvrready.com/">
     <script src="js/ga.js"></script>
-    <script>
-      (function () {
-        // Open external links in new tabs.
-        document.addEventListener('DOMContentLoaded', function () {
-          var links = document.querySelectorAll('a[href^="//"], a[href^="http://"], a[href^="https://"]');
-          for (var i = 0, len = links.length; i < len; ++i) {
-            links[i].setAttribute('target', '_blank');
-          }
-        });
-      })();
-    </script>
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
     {% block head %}{% endblock %}
