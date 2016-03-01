@@ -75,6 +75,11 @@ To update data, edit [`data.json`](src/data.json), which is in this format:
   ]
 ```
 
+## Credits
+
+This is a shameless fork of [Jake Archibald](https://github.com/jakearchibald/)'s awesome [isserviceworkerready](https://github.com/jakearchibald/isserviceworkerready).
+
+
 ## License
 
 This program is free software and is distributed under an [MIT License](LICENSE).
