@@ -8,7 +8,7 @@
     "gulp-filter": "^1.0.2",
     "gulp-htmlmin": "^0.2.0",
     "gulp-load-plugins": "^0.8.0",
-    "gulp-swig": "^0.7.4",
+    "gulp-nunjucks": "^2.2.0",
     "run-sequence": "^1.0.2"
   },
   "private": true,

@@ -51,10 +51,9 @@ gulp.task('copy:html', function () {
         '!src/masthead.html',
         '!src/base.html'
 
-    ]).pipe(plugins.swig({
-            defaults: { cache: false },
-            data: JSON.parse(fs.readFileSync("./src/data.json"))
-       }))
+    ]).pipe(plugins.nunjucks.compile(
+            JSON.parse(fs.readFileSync('./src/data.json'))
+       ))
       .pipe(plugins.htmlmin({
 
             // In-depth information about the options:
