@@ -323,8 +323,8 @@ a.wordmark:hover {
 }
 
 .result.yes {
-  /*background: #2ecc71;*/
-  background: mediumaquamarine;
+  /*background: mediumaquamarine;*/
+  background: #2ecc71;
 }
 
 .result.ish {
