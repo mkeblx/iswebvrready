@@ -8,12 +8,14 @@
     <script src="js/ga.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
     <script>
-      window.WebFont.load({
-        custom: {
-          families: ['KlimaWeb:n1,n3,n4,n6,n7,n8,i1,i3,i4,i6,i7,i8,'],
-        },
-        timeout: 25000
-      });
+      if ('WebFont' in window) {
+        window.WebFont.load({
+          custom: {
+            families: ['KlimaWeb:n1,n3,n4,n6,n7,n8,i1,i3,i4,i6,i7,i8,'],
+          },
+          timeout: 25000
+        });
+      }
     </script>
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
