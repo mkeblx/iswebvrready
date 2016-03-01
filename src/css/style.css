@@ -251,6 +251,10 @@ a.wordmark:hover {
   max-width: 510px;
 }
 
+.feature + .feature {
+  margin-top: 3rem;
+}
+
 .feature:target > header,
 .feature:target .results {
   background: cyan;
@@ -431,7 +435,7 @@ a.wordmark:hover {
 .details > li {
   background: #e4e4e4;
   display: block;
-  padding: .4rem 1rem;
+  padding: .5rem;
 }
 
 .details > li:nth-child(even) {
