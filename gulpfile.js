@@ -1,11 +1,14 @@
 var fs = require('fs');
+var path = require('path');
 
 var browserSync = require('browser-sync');
+var ghpages = require('gh-pages');
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');  // Temporary solution until Gulp 4
                                             // https://github.com/gulpjs/gulp/issues/355
 
+var BUILD_DIR = path.join(__dirname, 'build');
 var reload = browserSync.reload;
 
 // ---------------------------------------------------------------------
@@ -101,9 +104,14 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function () {
     gulp.watch(['src/**/*.css'], ['copy:css']);
-    gulp.watch(['src/*.html', 'src/data.json'], ['copy:html', reload]);
+    gulp.watch(['src/*.html', 'src/CNAME', 'src/data.json'], ['copy:html', reload]);
     gulp.watch(['src/img/**', 'src/demos/**'], ['copy:misc']);
 });
+
+gulp.task('deploy', function (done) {
+    ghpages.publish(BUILD_DIR, done);
+});
+
 
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |

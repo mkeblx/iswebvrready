@@ -3,6 +3,7 @@
     "@alrra/travis-scripts": "^1.1.0",
     "browser-sync": "^1.9.1",
     "del": "^1.1.1",
+    "gh-pages": "^0.10.0",
     "gulp": "^3.8.10",
     "gulp-filter": "^1.0.2",
     "gulp-htmlmin": "^0.2.0",
@@ -15,6 +16,7 @@
     "start": "npm run serve",
     "build": "gulp build",
     "serve": "gulp serve",
-    "test": "gulp build"
+    "test": "gulp build",
+    "deploy": "gulp deploy"
   }
 }

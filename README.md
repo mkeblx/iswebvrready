@@ -3,7 +3,8 @@
 [![devDependency Status](https://david-dm.org/mozvr/iswebvrready/dev-status.svg)](https://david-dm.org/mozvr/iswebvrready#info=devDependencies)
 
 Tracks the features of WebVR supported in browsers.
-__[View the site](https://mozvr.github.io/iswebvrready/)__.
+__[View the site](http://iswebvrready.com/)__.
+
 
 ## Run locally
 
@@ -24,6 +25,13 @@ To build the site:
 ```sh
 npm run build
 ```
+
+To deploy the site to [production](http://iswebvrready.com/):
+
+```sh
+npm run deploy
+```
+
 
 ## Contribute
 
@@ -73,6 +81,7 @@ To update data, edit [`data.json`](src/data.json), which is in this format:
 
   ]
 ```
+
 
 ## Credits
 
