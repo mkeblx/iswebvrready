@@ -43,7 +43,7 @@
     },
     {
       "name": "Promises",
-      "description": "Not WebVR-specific, but required by WebVR. <a href=\"https://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects\">Spec</a>.",
+      "description": "Not specific to WebVR but required by WebVR. <a href=\"https://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects\">Spec</a>.",
       "chrome": {
         "supported": 1,
         "minVersion": 36
