@@ -1,6 +1,5 @@
 # Is WebVR Ready Yet?
 
-[![Build Status](https://travis-ci.org/mozvr/iswebvrready.svg)](https://travis-ci.org/mozvr/iswebvrready)
 [![devDependency Status](https://david-dm.org/mozvr/iswebvrready/dev-status.svg)](https://david-dm.org/mozvr/iswebvrready#info=devDependencies)
 
 Tracks the features of WebVR supported in browsers.
