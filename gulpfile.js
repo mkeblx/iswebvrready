@@ -113,7 +113,7 @@ gulp.task('watch', function () {
     gulp.watch(['src/**/*.css'], ['copy:css']);
     gulp.watch(['src/**/*.js'], ['copy:js']);
     gulp.watch(['src/*.html', 'src/CNAME', 'src/data.json'], ['copy:html', reload]);
-    gulp.watch(['src/img/**', 'src/demos/**'], ['copy:misc']);
+    gulp.watch(['src/img/**', 'src/fonts/**', 'src/demos/**'], ['copy:misc', reload]);
 });
 
 gulp.task('deploy', function (done) {

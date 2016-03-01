@@ -34,7 +34,7 @@
             <h1 class="icon {{ feature[browser.id].icon|default(browser.id) }}">{{ browser.name }}</h1>
             <p class="support">
               {{ supportLevel }}
-              {% if feature[browser.id].minVersion %}
+              {% if feature[browser.id].supported and feature[browser.id].minVersion %}
                 since version <span class="version">{{ feature[browser.id].minVersion }}</span>
               {% endif %}
             </p>
@@ -54,5 +54,5 @@
     </article>
   {% endfor %}
 
-  <p class="outro">Brought to you by <a href="http://mozvr.com/" class="mozvr-wordmark"><img src="img/mozvr-white.svg" title="MozVR" alt="MozVR"></a></p>
+  <p class="credits">Maintained by <a href="http://mozvr.com/" class="mozvr-wordmark"><img src="img/mozvr-white.svg" title="MozVR" alt="MozVR"></a></p>
 {% endblock %}
