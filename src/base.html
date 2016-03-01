@@ -5,15 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <!-- <link rel="canonical" href="https://iswebvrready.com/"> -->
+    <script src="js/ga.js"></script>
     <script>
       (function () {
-        (function(i,r){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
-        })(window,'ga');
-
-        // window.ga('create', '', 'auto');
-        window.ga('send', 'pageview');
-
         // Open external links in new tabs.
         document.addEventListener('DOMContentLoaded', function () {
           var links = document.querySelectorAll('a[href^="//"], a[href^="http://"], a[href^="https://"]');
@@ -23,7 +17,6 @@
         });
       })();
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
     {% block head %}{% endblock %}
