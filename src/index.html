@@ -17,29 +17,34 @@
       </header>
       <div class="results">
         {% for browser in browsers %}
-          <section class="result {% if feature[browser.id].supported == 0.5 %}ish{% elif feature[browser.id].supported %}yes{% else %}no{% endif %}">
-            <h1 class="icon {{ feature[browser.id].icon|default(browser.id) }}">{{browser.name}}</h1>
-            {% if feature[browser.id].supported %}
-              <p class="support">
-                {% if feature[browser.id].supported == 0.5 %}
-                  Somewhat supported
-                {% else %}
-                  Supported
-                {% endif %}
-                {% if feature[browser.id].minVersion %}
-                  since version <span class="version">{{ feature[browser.id].minVersion }}</span>
-                {% endif %}
-              </p>
-            {% else %}
-              <p class="support">No support</p>
-            {% endif %}
+
+          {% if feature[browser.id].supported == 0.5 %}
+            {% set supportLevel = 'Somewhat supported' %}
+            {% set supportClass = 'ish' %}
+          {% elif feature[browser.id].supported %}
+            {% set supportLevel = 'Supported' %}
+            {% set supportClass = 'yes' %}
+          {% else %}
+            {% set supportLevel = 'No support' %}
+            {% set supportClass = 'no' %}
+          {% endif %}
+
+          <section class="result {{ supportClass }}"
+                   title="{{ supportLevel + (' since version ' + feature[browser.id].minVersion if feature[browser.id].minVersion) + ' in ' + browser.name }}">
+            <h1 class="icon {{ feature[browser.id].icon|default(browser.id) }}">{{ browser.name }}</h1>
+            <p class="support">
+              {{ supportLevel }}
+              {% if feature[browser.id].minVersion %}
+                since version <span class="version">{{ feature[browser.id].minVersion }}</span>
+              {% endif %}
+            </p>
           </section>
         {% endfor %}
       </div>
       <ul class="details">
         {% for browser in browsers %}
           {% for detail in feature[browser.id].details %}
-            <li><strong>{{ browser.name }}:</strong> {{ detail|safe }}</li>
+            <li><strong class="browser">{{ browser.name }}</strong> {{ detail|safe }}</li>
           {% endfor %}
         {% endfor %}
         {% for detail in feature.details %}

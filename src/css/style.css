@@ -245,6 +245,10 @@ a.wordmark {
   background-image: url(../img/webkit.png);
 }
 
+.browser:after {
+  content: ":";
+}
+
 .details {
   font-size: .9rem;
   margin: 0;
