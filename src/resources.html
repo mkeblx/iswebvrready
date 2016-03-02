@@ -1,10 +1,8 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% block title %}WebVR Resources{% endblock %}
 
 {% block body %}
-  {% include 'masthead.html' %}
-
   <article class="feature" id="articles">
     <header class="no-background">
       <a href="#articles" class="perma">
@@ -45,15 +43,13 @@
     </ul>
   </article>
 
-<article class="feature" id="libraries">
-  <header class="no-background">
-    <a href="#libraries" class="perma">
-      <h1 class="feature-name">Libraries</h1>
-    </a>
-  </header>
-  <ul class="details">
-  </ul>
-</article>
-
-  <p class="credits">Maintained by <a href="http://mozvr.com/" class="mozvr-wordmark"><img src="img/mozvr-white.svg" title="MozVR" alt="MozVR"></a></p>
+  <article class="feature" id="libraries">
+    <header class="no-background">
+      <a href="#libraries" class="perma">
+        <h1 class="feature-name">Libraries</h1>
+      </a>
+    </header>
+    <ul class="details">
+    </ul>
+  </article>
 {% endblock %}
