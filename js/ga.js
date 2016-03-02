@@ -14,7 +14,8 @@ function initGAScript (id) {
     s.async = true;
     s.src = a;
 
-    v.head.appendChild(s);
+    var m = v.getElementsByTagName('script')[0];
+    m.parentNode.insertBefore(s, m);
   })(window, document, 'https://www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', id, 'auto');
