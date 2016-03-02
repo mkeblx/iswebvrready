@@ -64,7 +64,7 @@ green: rgb(97,211,182)
   font-family: KlimaWeb;
   src: url('../fonts/klima-regular-web.eot');
   src: url('../fonts/klima-regular-web.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/klima-regular-web.svg#klimaregular') format('svg'),
+       url('../fonts/klima-regular-web.svg#klimaregular') format('svg'),
        url('../fonts/klima-regular-web.woff2') format('woff2'),
        url('../fonts/klima-regular-web.woff') format('woff'),
   url('../fonts/klima-regular-web.ttf') format('truetype');
@@ -75,7 +75,7 @@ green: rgb(97,211,182)
   font-family: KlimaWeb;
   src: url('../fonts/klima-regular-italic-web.eot');
   src: url('../fonts/klima-regular-italic-web.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/klima-regular-italic-web.svg#klimaregular_italic') format('svg'),
+       url('../fonts/klima-regular-italic-web.svg#klimaregular_italic') format('svg'),
        url('../fonts/klima-regular-italic-web.woff2') format('woff2'),
        url('../fonts/klima-regular-italic-web.woff') format('woff'),
   url('../fonts/klima-regular-italic-web.ttf') format('truetype');
