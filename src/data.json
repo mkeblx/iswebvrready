@@ -73,7 +73,7 @@
     },
     {
       "name": "<code>navigator.getVRDisplays</code>",
-      "description": "Namespace for page-side WebVR API. <a href=\"https://mozvr.github.io/webvr-spec/#navigator-getvrdisplays-attribute\">Spec</a>. <a href=\"demos/navigator.getVRDisplays/\">Test</a>.",
+      "description": "Namespace for page-side WebVR API. <a href=\"https://mozvr.github.io/webvr-spec/#navigator-getvrdisplays-attribute\">Spec</a>. <a href=\"https://toji.github.io/webvr-samples/00-hello-webvr\">Test</a>.",
       "chrome": {
         "supported": 0.5,
         "details": [
