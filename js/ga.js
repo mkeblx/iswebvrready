@@ -61,7 +61,7 @@ function getLinkText (a) {
   return '';
 }
 
-initGAScript('UA-74058648-1');
+initGAScript('UA-74058648-2');
 document.addEventListener('DOMContentLoaded', initGAEvents);
 
 })();
