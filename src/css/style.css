@@ -245,18 +245,22 @@ a.wordmark:hover {
   text-overflow: ellipsis;
 }
 
-.feature {
+.article {
   line-height: 1.4;
   margin: 0 auto 1rem;
   max-width: 510px;
 }
 
-.feature + .feature {
+.faq {
+  max-width: 510px;
+}
+
+.article + .article {
   margin-top: 3rem;
 }
 
-.feature:target > header,
-.feature:target .results {
+.article:target > header,
+.article:target .results {
   background: cyan;
 }
 
@@ -265,11 +269,16 @@ a.wordmark:hover {
   padding: 0 1rem;
 }
 
-.feature > header p {
+.article > header p,
+.faq p {
   margin: .7rem 0;
 }
 
-.feature > header p a {
+.faq ul {
+  margin: 1.4rem 0 1.4rem 2rem;
+}
+
+.article > header p a {
   font-weight: 600;
 }
 
@@ -505,6 +514,10 @@ a.wordmark:hover {
     display: flex;
     flex-flow: wrap;
     justify-content: flex-end;
+    max-width: 947px;
+  }
+
+  .faq {
     max-width: 947px;
   }
 

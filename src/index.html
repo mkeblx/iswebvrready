@@ -1,12 +1,11 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% block title %}Is WebVR Ready?{% endblock %}
 
 {% block body %}
-  {% include 'masthead.html' %}
   {% for feature in features %}
     {% set featureId = feature.name|striptags|lower|replace(' ', '-') %}
-    <article class="feature" id="{{ featureId }}">
+    <article class="article feature" id="{{ featureId }}">
       <header>
         <a href="#{{ featureId }}" class="perma">
           <h1 class="feature-name">
@@ -53,6 +52,4 @@
       </ul>
     </article>
   {% endfor %}
-
-  <p class="credits">Maintained by <a href="http://mozvr.com/" class="mozvr-wordmark"><img src="img/mozvr-white.svg" title="MozVR" alt="MozVR"></a></p>
 {% endblock %}
