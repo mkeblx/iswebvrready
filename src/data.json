@@ -57,18 +57,12 @@
         "minVersion": 23
       },
       "safari": {
-        "minVersion": 7.1,
-        "supported": 0.5,
-        "details": [
-          "<code>Promise.resolve(promise)</code> creates a new <code>Promise</code> instance (fixed in the nightlies)."
-        ]
+        "supported": 1,
+        "minVersion": 9
       },
       "edge": {
-        "icon": "edge",
-        "supported": 0.5,
-        "details": [
-          "Preview build."
-        ]
+        "supported": 1,
+        "minVersion": 13
       }
     },
     {
