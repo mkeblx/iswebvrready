@@ -34,7 +34,7 @@
             <p class="support">
               {{ supportLevel }}
               {% if feature[browser.id].supported and feature[browser.id].minVersion %}
-                since version <span class="version">{{ feature[browser.id].minVersion }}</span>
+                since version <span class="version tt">{{ feature[browser.id].minVersion }}</span>
               {% endif %}
             </p>
           </section>
