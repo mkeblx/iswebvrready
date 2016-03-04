@@ -157,9 +157,13 @@ green: rgb(97,211,182)
 
 html {
   background: #fff;
-  font: 15px/1.4 KlimaWeb, Helvetica Neue, Helvetica, sans-serif;
+  font: 15px/1.4 Helvetica Neue, Helvetica, sans-serif;
   min-height: 100%;
   overflow-y: scroll;
+}
+
+html.wf-active {
+  font-family: KlimaWeb;
 }
 
 body {
@@ -178,6 +182,13 @@ a:active {
   text-decoration: underline;
 }
 
+.tt {
+  font-family: Andale Mono, monospace;
+}
+
+.wf-ocrbweb-n4-active .tt {
+  font-family: OCR-B-web, Andale Mono, monospace;
+}
 .page-title {
   text-align: center;
 }
@@ -202,9 +213,10 @@ a.wordmark:hover {
 
 .external-links {
   color: #ccc;
-  font: 1.15rem/2 OCR-B-web, monospace;
-  margin: .3rem 0 1.1rem;
+  font-size: 1.15rem;
+  line-height: 2;
   list-style: none;
+  margin: .3rem 0 1.1rem;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
@@ -367,7 +379,6 @@ a.wordmark:hover {
   background: rgba(255,255,255,0.8);
   bottom: 0;
   color: #000;
-  font-family: OCR-B-web, monospace;
   font-size: .55rem;
   line-height: 1.2;
   padding: .1rem .2rem;
