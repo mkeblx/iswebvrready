@@ -19,6 +19,10 @@
     {
       "id": "edge",
       "name": "Edge"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung Internet for GearVR"
     }
   ],
   "features": [
@@ -39,6 +43,9 @@
       },
       "edge": {
         "supported": 0
+      },
+      "samsung": {
+        "supported": 1
       }
     },
     {
@@ -63,6 +70,10 @@
       "edge": {
         "supported": 1,
         "minVersion": 13
+      },
+      "samsung": {
+        "supported": 1,
+        "minVersion": 4
       }
     },
     {
@@ -86,6 +97,12 @@
       "edge": {
         "supported": 1,
         "minVersion": 12
+      },
+      "samsung": {
+        "supported": 0.5,
+        "details": [
+          "API present but not functioning, future update will enable support."
+        ]
       }
     },
     {
@@ -107,6 +124,9 @@
         "supported": 0
       },
       "edge": {
+        "supported": 0
+      },
+      "samsung": {
         "supported": 0
       }
     },
@@ -130,6 +150,9 @@
       },
       "edge": {
         "supported": 0
+      },
+      "samsung": {
+        "supported": 0
       }
     },
     {
@@ -151,6 +174,9 @@
         "supported": 0
       },
       "edge": {
+        "supported": 0
+      },
+      "samsung": {
         "supported": 0
       }
     },
@@ -179,8 +205,12 @@
       "edge": {
         "supported": 0
       },
-      "details": [
-      ]
+      "samsung": {
+        "supported": 0.5,
+        "details": [
+          "Experimental support can be <a href=\"http://developer.samsung.com/technical-doc/view.do?v=T000000270L\">enabled</a>."
+        ]
+      }
     }
   ]
 }

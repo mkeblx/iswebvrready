@@ -443,6 +443,10 @@ a.wordmark:hover {
   background-image: url(../img/webkit.png);
 }
 
+.icon.samsung {
+  background-image: url('../img/samsung-internet.png');
+}
+
 .browser:after {
   content: ':\00a0';
 }
