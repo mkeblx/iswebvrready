@@ -42,6 +42,34 @@
       }
     },
     {
+      "name": "<code>navigator.getVRDisplays</code>",
+      "description": "Namespace for page-side WebVR API. Resolves an array of available <a href=\"https://mozvr.com/webvr-spec/#vrdisplay\"><code>VRDisplay</code>s</a>. <br><br> <a href=\"https://mozvr.com/webvr-spec/#navigator-getvrdisplays-attribute\">Spec</a>. <a href=\"https://toji.github.io/webvr-samples/00-hello-webvr\">Test</a>.",
+      "chrome": {
+        "supported": 0.5,
+        "details": [
+          "Supported in <a href=\"https://webvr.info/get-chrome/\">experimental builds</a>."
+        ]
+      },
+      "firefox": {
+        "supported": 0,
+        "minVersion": 27,
+        "details": [
+          "Uses old API interface: <code>navigator.getVRDevices</code>."
+        ]
+      },
+      "opera": {
+        "supported": 0
+      },
+      "safari": {
+        "supported": 0
+      },
+      "edge": {
+        "supported": 0
+      },
+      "details": [
+      ]
+    },
+    {
       "name": "Promises",
       "description": "Not specific to WebVR but required by WebVR. <br><br> <a href=\"https://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects\">Spec</a>.",
       "chrome": {
@@ -153,34 +181,6 @@
       "edge": {
         "supported": 0
       }
-    },
-    {
-      "name": "<code>navigator.getVRDisplays</code>",
-      "description": "Namespace for page-side WebVR API. Resolves an array of available <a href=\"https://mozvr.com/webvr-spec/#vrdisplay\"><code>VRDisplay</code>s</a>. <br><br> <a href=\"https://mozvr.com/webvr-spec/#navigator-getvrdisplays-attribute\">Spec</a>. <a href=\"https://toji.github.io/webvr-samples/00-hello-webvr\">Test</a>.",
-      "chrome": {
-        "supported": 0.5,
-        "details": [
-          "Supported in <a href=\"https://webvr.info/get-chrome/\">experimental builds</a>."
-        ]
-      },
-      "firefox": {
-        "supported": 0,
-        "minVersion": 27,
-        "details": [
-          "Uses old API interface: <code>navigator.getVRDevices</code>."
-        ]
-      },
-      "opera": {
-        "supported": 0
-      },
-      "safari": {
-        "supported": 0
-      },
-      "edge": {
-        "supported": 0
-      },
-      "details": [
-      ]
     }
   ]
 }
