@@ -54,7 +54,7 @@
         "supported": 0,
         "minVersion": 27,
         "details": [
-          "Uses old API interface: <code>navigator.getVRDevices</code>."
+          "Uses old API interface: <code>navigator.getVRDevices</code>. New builds landing in Nightly end of May."
         ]
       },
       "opera": {
