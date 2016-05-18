@@ -537,7 +537,7 @@ a.wordmark:hover {
   }
 
   .feature > header {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNo3fnsPwNRAKdKABXjBkcjeXa5AAAAAElFTkSuQmCC);
+    background: url(../img/dots.svg);
     width: 35%;
   }
 
