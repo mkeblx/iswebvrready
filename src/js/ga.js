@@ -49,16 +49,14 @@ function initGAEvents () {
 }
 
 function getLinkText (a) {
-  var txt = a.textContent.trim();
+  var txt = el.textContent.trim();
   if (txt) {
     return txt;
   }
-
-  var img = a.querySelector('img');
+  var img = el.tagName === 'IMG' ? el : el.querySelector('img');
   if (img) {
-    return img.getAttribute('alt');
+    return img.getAttribute('alt') || img.getAttribute('title');
   }
-
   return '';
 }
 
