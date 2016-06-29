@@ -140,13 +140,10 @@
       }
     },
     {
-      "name": "Gamepad Vibration (<code>Gamepad#vibrate</code>)",
-      "description": "Required for haptic feedback for controllers. <br><br> <a href=\"https://lists.w3.org/Archives/Public/public-webapps/2016AprJun/0052.html\">Discussion</a>.",
+      "name": "Gamepad Vibration",
+      "description": "Required for vibration motors for controllers. <br><br> <a href=\"https://github.com/w3c/gamepad/issues/19\">Discussion</a>.",
       "chrome": {
-        "supported": 0.5,
-        "details": [
-          "Supported in <a href=\"https://webvr.info/get-chrome/\">experimental builds</a>."
-        ]
+        "supported": 0
       },
       "firefox": {
         "supported": 0
