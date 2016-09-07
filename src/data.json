@@ -133,10 +133,8 @@
         "minVersion": 12
       },
       "samsung": {
-        "supported": 0.5,
-        "details": [
-          "API present but not functioning, future update will enable support."
-        ]
+        "supported": 1,
+        "minVersion": 4.2
       }
     },
     {
